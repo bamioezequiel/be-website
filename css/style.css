@@ -1,0 +1,171 @@
+/* ------- GENERICS   ------- */
+
+:root {
+    --color-primary: #FFCA2B;
+    --dark: #1b1e21;
+    --white: #fff;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 24px;
+}
+
+/* Reset */
+
+html {
+    box-sizing: border-box;  
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* ------- BASE       ------- */
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+main {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 0.5em 0;
+}
+    
+/* ------- COMPONENTS ------- */
+
+/* Header */
+
+.header {
+    position: sticky;
+    top: -0.15rem;
+    z-index: 999;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary);
+    box-shadow: 0 0 4px 0;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header a {
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.header a:hover {
+    box-shadow: none;
+}
+
+.header nav {
+    padding: 5px;
+}
+
+.nav-logo {
+    width: auto;
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    width: 75%;
+    flex-basis: 75%;
+    justify-content: space-evenly;
+}
+
+
+/* Main */
+
+.box {
+    width: 100%;
+    height: 615px;
+}
+
+/* Footer */
+
+.footer {
+    position:absolute;
+    bottom: 0;
+    background-color: #12121205;
+    color: #1212127A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.social-media a {
+    margin: 10px;
+}
+
+.poster {
+    display: inline;
+    background-color: var(--dark);
+    color: var(--color-primary);
+    box-shadow: 5px 5px 0 2px var(--color-primary);
+}
+
+/* ------- UTILITS    ------- */
+
+.p-10 {
+    padding: 10px;
+}
+
+.lh-2 {
+    line-height: 2;
+}
+
+.f-size-md {
+    font-size: 1em;
+}
+
+.f-size-md {
+    font-size: 1.8em;
+}
+
+.f-size-lg {
+    font-size: 2.5em;
+}
+
+.f-size-xl {
+    font-size: 3.8em;
+}
+
+
