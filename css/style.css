@@ -4,6 +4,7 @@
     --color-primary: #FFCA2B;
     --dark: #1b1e21;
     --white: #fff;
+    --color-active: #fff;
     --font-sm: 14px;
     --font-md: 16px;
     --font-lg: 24px;
@@ -38,9 +39,7 @@ body {
 
 main {
     width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 50px;
+    margin: 50px auto;
 }
 
 a {
@@ -60,6 +59,9 @@ h6 {
     font-weight: 900;
     line-height: 1.2;
     margin: 0.5em 0;
+}
+
+footer {
 }
     
 /* ------- COMPONENTS ------- */
@@ -119,7 +121,7 @@ h6 {
 /* Footer */
 
 .footer {
-    position:absolute;
+    position: absolute;
     bottom: 0;
     background-color: #12121205;
     color: #1212127A;
@@ -142,18 +144,51 @@ h6 {
     box-shadow: 5px 5px 0 2px var(--color-primary);
 }
 
+/* CV */
+
+.cv-img {
+    border-radius: 100%;
+    background-color: var(--color-primary);
+}
+
+.cv-index {
+    /* position: absolute;
+    width: 14%;
+    height: 100%;
+    background-color: var(--color-primary); */
+}
+
+.box-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 /* ------- UTILITS    ------- */
+
+.d-inline {
+    display: inline;
+}
+
+.t-center {
+    text-align: center;
+}
 
 .p-10 {
     padding: 10px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
 }
 
 .lh-2 {
     line-height: 2;
 }
 
-.f-size-md {
-    font-size: 1em;
+.f-size-s {
+    font-size: 1.4em;
 }
 
 .f-size-md {
