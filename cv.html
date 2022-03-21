@@ -13,116 +13,98 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <h2 class="nav-logo f-size-md">
-                <a href="./" class="pulse">
-                    <span>bamioezequiel</span>
+            <h2 class="nav-logo">
+                <a href="./">
+                    <span>bamioezequiel> </span>
                 </a>
             </h2>
 
-            <nav class="nav nav-menu">
-                <a href="./">Home</a>
-                <a href="./cv.html" class="active">CV</a>
-                <a href="./blog.html">Blog</a>
+            <nav class="flex-row-evenly-center nav-menu">
+                <a href="./" class="active">Home</a>
+                <a href="./cv.html">CV</a>
+                <a href="index.html#contacto">Contacto</a>
             </nav>
-        </div>
     </header>
 
-    <div class="index">
-        <div class="flex-column-evenly">
-            <a href="#acerca" class="index-item">Acerca</a>
-            <a href="#educacion" class="index-item">Educación</a>
-            <a href="#cursos" class="index-item">Cursos</a>
-            <a href="#tecnologias" class="index-item">Tecnologias</a>
-            <a href="#experiencia" class="index-item">Experiencia</a>
-        </div>
-        <br>
-        <br>
-        <span class="flex-column-center-center">2022</span>
+    <div class="cv-index">
+        <a href="#contact">📌</a>
+        <a href="#about">✒</a>
+        <a href="#education">👨‍🎓</a>
+        <a href="#tech">💻</a>
+        <a href="#dev">👨‍💻</a>
     </div>
 
-    <section class="full-screen-center">
-        <div class="container-sm flex-row-around-center pt-20">
-            <img src="./img/profile-2.png" alt="Profile" class="cv-img d-inline" width="214px" height="230px">
-            <p class="poster d-inline f-size-md p-10">Programador</p>
-        </div>
+    <section class="container-md cv">
 
-        <div class="container-sm flex-row-around-center">
-            <h1 class="f-size-xl t-center">Bamio Ezequiel</h1>
-            <h2 class="poster f-size-md p-10">Contacto</h2>
+        <article class="cv-avatar section text-center">
+            <img src="./img/profile-2.png" alt="Profile">
+            <h1>Bamio Ezequiel</h1>
+            <p>Programador</p>
+            
+            <a href="CV-Bamio-Ezequiel.pdf">Descargar</a>
+        </article>
+
+        <article id="contact" class="cv-contact section">
+            <h2 class="section-title">Contacto</h2>
             <ul>
                 <li>Argentina. Buenos Aires, Quilmes</li>
                 <li>14 de Abril 2001</li>
                 <li>bamioezequielok@gmail.com</li>
                 <li>+54 11 3645-7522</li>
             </ul>
-        </div>
-    </section>
+        </article>
 
-    <section id="acerca" class="full-screen-center">
-        <div class="container-sm flex-column-around-center">
-            <h2 class="poster f-size-md p-10">Acerca</h2>
-            <p class="f-size-s lh-2">Empece en junio del 2020 a estudiar programación como autodidacta, despues de 6 meses me anote en la Universidad Tecnologica Nacional (FRA) en la Tecnicatura Universitaria en Programación, actualmente (2022) sigo cursando y tambien formandome como autodidacta.
-            <br>Deseo formar parte de una empresa que me permita continuar aprendiendo y demostrar mi potencial. Tengo como objetivo auto superarme día a día.</p>
-        </div>
-    </section>
+        <article id="about" class="cv-about section">
+            <h2 class="section-title">Acerca</h2>
+            <p>Empece en junio del 2020 a estudiar programación como autodidacta, despues de 6 meses me anote en la Universidad Tecnologica Nacional (FRA) en la Tecnicatura Universitaria en Programación, actualmente (2022) sigo cursando y tambien formandome como autodidacta.
+                <br>Deseo formar parte de una empresa que me permita continuar aprendiendo y demostrar mi potencial. Tengo como objetivo auto superarme día a día.</p>
+        </article>
 
-    <section id="educacion" class="full-screen-center">
-        <div class="container-sm flex-column-around-center">
-            <h2 class="poster f-size-md p-10">Formación Academica</h2>
+        <article id="education" class="cv-education section">
+            <h2 class="section-title">Formación Academica</h2>
             <h3>Tecnicatura Universitaria en Programación - Universidad Tecnológica Nacional ( FRA ) <br> 2021 - En curso</h3>
-            <ul class="f-size-s">
+            <ul>
                 <li>Base de datos ( SQL Server)</li>
                 <li>Programación Orientada a Objetos ( C# )</li>
                 <li>Programación Estructurada. ( C )</li>
                 <li>Lógica. ( JavaScript )</li>
             </ul>
-        </div>
-    </section>
 
-    <section id="cursos" class="full-screen-center">
-        <div class="container-sm flex-column-around-center">
-            <h2 class="poster f-size-md p-10">Cursos</h2>
+            <h2 class="section-title">Cursos</h2>
             <div>
                 <h3>Udemy</h3>
-                <ul class="f-size-s">
-                    <li><pre>Angular: De cero a experto                    - <i>Diciembre 2021</i></pre></li>
-                    <li><pre>Administración de Windows desde la consola    - <i>Octubre 2021</i></pre></li>
-                    <li><pre>SQL Server 2019                               - <i>Agosto de 2020</i></pre></li>
-                    <li><pre>Master en C# de cero 2020                     - <i>Junio de 2020</li></pre></li>
+                <ul>
+                    <li>Angular: De cero a experto - <i>Diciembre 2021</i></li>
+                    <li>SQL Server 2019 - <i>Agosto de 2020</i></li>
+                    <li>Master en C# de cero 2020 - <i>Junio de 2020</i></li>
                 </ul>
                 <h3>Youtube</h3>
-                <ul class="f-size-s">
-                    <li><pre>JavaScript   50hs | Jonmircha                 - <i>Marzo de 2022</li></pre></li>
-                    <li><pre>HTML && CSS  47hs | Jonmircha                 - <i>Marzo de 2022</li></pre></li>
+                <ul>
+                    <li>JavaScript   50hs | Jonmircha - <i>Marzo de 2022</i></li>
+                    <li>HTML && CSS  47hs | Jonmircha - <i>Marzo de 2022</i></li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </article>
 
-    <section id="tecnologias" class="full-screen-center">
-        <h2 class="poster f-size-md p-10">Tecnologias</h2>
-        <div class="container-sm flex-row-around-center pt-20">
-                <a href="#" class="m-5"><img title="C#" height="50" src="img/CSharp.png" alt="C#"></a>
-                <a href="#" class="m-5"><img title="SQLServer" height="50" src="img/SQL.png" alt="SQLServer"></a>
-                <a href="#" class="m-5"><img title="C" height="50" src="img/C.png" alt="C"></a>
-                <a href="#" class="m-5"><img title="Angular" height="50" src="img/Angular.png" alt="Angular"></a>
-                <a href="#" class="m-5"><img title="Firebase" height="50" src="img/Firebase.png" alt="Firebase"></a>
-                <a href="#" class="m-5"><img title="Typescript" height="50" src="img/Typescript.png" alt="Typescript"></a>
-                <a href="#" class="m-5"><img title="Javascript" height="50" src="img/JS.png" alt="JavaScirpt"></a>
-                <a href="#" class="m-5"><img title="CSS" height="50" src="img/CSS.png" alt="CSS"></a>
-                <a href="#" class="m-5"><img title="HTML" height="50" src="img/HTML.png" alt="HTML"></a>
-            
-        </div>
-    </section>
-
-    <section id="experiencia" class="full-screen-center">
-        <div class="container-sm flex-column-around-center">
-            <h2 class="poster f-size-md p-10">Experiencia</h2>
+        <article id="tech" class="cv-tech section">
+            <h2 class="section-title">Tecnologias</h2>
+            <div>
+                <a href="#" class="m-5"><img title="C#" width="100px" height="50px" src="img/CSharp.png" alt="C#"></a>
+                <a href="#" class="m-5"><img title="SQLServer" width="100px" height="50px" src="img/SQL.png" alt="SQLServer"></a>
+                <a href="#" class="m-5"><img title="C" width="100px" height="50px" src="img/C.png" alt="C"></a>
+                <a href="#" class="m-5"><img title="Angular" width="100px" height="50px" src="img/Angular.png" alt="Angular"></a>
+                <a href="#" class="m-5"><img title="Firebase" width="100px" height="50px" src="img/Firebase.png" alt="Firebase"></a>
+                <a href="#" class="m-5"><img title="Typescript" width="100px" height="50px" src="img/Typescript.png" alt="Typescript"></a>
+                <a href="#" class="m-5"><img title="Javascript" width="100px" height="50px" src="img/JS.png" alt="JavaScirpt"></a>
+                <a href="#" class="m-5"><img title="CSS" width="100px" height="50px" src="img/CSS.png" alt="CSS"></a>
+                <a href="#" class="m-5"><img title="HTML" width="100px" height="50px" src="img/HTML.png" alt="HTML"></a>
+            </div>
+        </article>
+        <article id="dev" class="cv-dev section">
+            <h2 class="section-title">Experiencia</h2>
             <h3>Actualmente no tengo experiencia laboral</h3>
-        </div>
+        </article>
     </section>
-
-   <div class="m-5"></div>
  
 </body>
 </html>

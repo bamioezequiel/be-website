@@ -44,10 +44,11 @@
     --color-primary: #F5C016;
     --color-primary-bg: #f6cc07;
     --color-secondary: rgb(255, 202, 43, 0.75);
-    --color-dark: #101010;
+    --color-dark-primary: #101010;
+    --color-dark-secondary: #1c1e24;
     --color-black-opacity: rgba(0, 0, 0, 0.5);
     --color-white: #fff;
-    --color-gray-light: #f3f3f3;
+    --color-gray-light: #ebeef2;
     --color-gray-dark: #666;
     --color-gray: #ccc;
     --color-title: #333;
@@ -112,7 +113,7 @@ h6 {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
   
 h2 {
@@ -157,10 +158,38 @@ hr {
 
 .poster {
     display: inline;
-    background-color: var(--color-dark);
+    background-color: var(--color-dark-primary);
     color: var(--color-primary);
     box-shadow: 5px 5px 0 2px var(--color-primary);
 }
+
+/* ******************** Sections ******************** */
+
+.section-title {
+    border-top: medium solid var(--color-primary);
+    border-bottom: medium solid var(--color-primary);
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--title-color) 
+}
+
+/* ******************** Buttons ******************** */
+
+.btn {
+    display: inline-block;
+    width: 200px;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--color-dark-primary);
+    background-color: var(--color-primary);
+    border-radius: 0.5rem;
+}
+
+/* ******************** Card ******************** */
 
 .card h3 {
     font-size: 1.5em;
@@ -194,11 +223,11 @@ hr {
 /* ******************** 
     Utilities
    ******************** */
+
 .container {
     margin-right: auto;
     margin-left: auto;
 }
-
 
 .container-lg,
 .container-md,
@@ -258,6 +287,12 @@ hr {
     align-items: center;
 }
 
+.flex-row-evenly-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .flex-column-evenly-center {
     display: flex;
     flex-direction: column;
@@ -292,80 +327,18 @@ hr {
     flex: 1 1 320px;
 }
 
-.d-inline {
-    display: inline;
-}
+/* ********************  ******************** */
 
-.d-block {
-    display:block;
-}
-
-.t-center {
+.text-center {
     text-align: center;
 }
 
-.t-left {
+.text-left {
     text-align: left;
 }
 
-.t-right {
+.text-right {
     text-align: right;
-}
-
-.p-10 {
-    padding: 10px;
-}
-
-.p-20 {
-    padding: 20px;
-}
-
-.pt-20 {
-    padding: 20px;
-}
-
-.m-5 {
-    margin: 5;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
-}
-
-.lh-2 {
-    line-height: 2;
-}
-
-.f-size-s {
-    font-size: 1.4em;
-}
-
-.f-size-md {
-    font-size: 1.8em;
-}
-
-.f-size-lg {
-    font-size: 2.5em;
-}
-
-.f-size-xl {
-    font-size: 3.8em;
-}
-
-.f-bold {
-    font-weight: bold;
-}
-
-.l-style-none {
-    list-style: none;
-}
-
-.w-5p {
-    width: 50%;
-}
-
-.mt-10 {
-    margin-top: 10px;
 }
 
 .box-shadow-1 {
@@ -374,6 +347,12 @@ hr {
 
 .bg-gray-light {
     background-color: var(--color-gray-light);
+    color: var(--color-dark-primary);
+}
+
+.bg-dark {
+    background-color: var(--color-dark-primary);
+    color: var(--color-gray-light);
 }
 
 /* ******************** 
@@ -388,7 +367,7 @@ hr {
     z-index: 999;
     width: 100%;
     text-align: center;
-    background-color: var(--color-dark);
+    background-color: var(--color-dark-primary);
     box-shadow: 0 0 4px 0;
 }
 
@@ -396,6 +375,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: var(--color-dark-primary);
 }
 
 .header a {
@@ -406,14 +386,9 @@ hr {
     box-shadow: none;
 }
 
-.header nav {
-    padding: 5px;
-}
-
 .nav-logo {
-    width: auto;
     margin-right: auto;
-    padding-left: 50px;
+    margin-left: 170px;
 }
 
 .nav-logo a {
@@ -422,65 +397,16 @@ hr {
 
 .nav-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-basis: 60%;
     width: 60%;
 }
 
-/* ******************** Hero ******************** */
-
-.hero-image {
-  background-image: url('../img/img2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-  
-.hero-image-opacity {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--color-black-opacity);
-}
-  
-.hero-image-title {
-    font-size: 7.5vw;
-    color: var(--color-white);
-}
+/* ******************** Header ******************** */
 
 .hero {
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* ******************** About ******************** */
-
-.about {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: space-between;
-    align-content: center;
-}
-
-/* ******************** Portafolio ******************** */
-
-.section-title {
-    border-top: medium solid var(--color-primary);
-    border-bottom: medium solid var(--color-primary);
-    margin: 2rem auto;
-    padding: 0.5rem 1rem;
-    width: 250px;
-    font-size: 2rem;
-    text-align: center;
-    color: var(--title-color) 
+    height: 30vh;
 }
 
 /* ******************** Contacto ******************** */
@@ -531,74 +457,70 @@ hr {
     color: var(--color-gray-dark);
 }
 
-.social-media a {
-    margin: 10px;
+.social-media > * {
+    margin-right: 10px;
+    padding: 1px;
+    border: thin solid var(--color-white);
+    border-top: none;
 }
 
 /* ******************** CV ******************** */
 
-.cv-img {
-    background-color: var(--color-primary);
-    border-radius: 100%;
-}
-
-.index {
-    position: fixed;
-    width: 14%;
-    height: 100vh;
-    margin-top: 60px;
-    padding: 50px 0;
-    background-color: var(--color-primary);
-}
-
-.index-item {
+.cv-index {
+    position: sticky;
+    z-index: 998;
+    top: 3rem;
+    float: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 60px;
+    height: 100vh;
+    padding-top: 2.5rem;
+    background-color: var(--color-dark-primary);
+}
+
+.cv-index a {
+    margin: 30px 10px;
+    font-size: 1.5em;
+}
+
+.cv, 
+.section {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cv-avatar img {
+    display: block;
+    width: calc(100px * 2.5);
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    background-color: var(--color-primary-bg);
+  }
+
+.cv-nav {
     width: 100%;
-    margin: 30px 0;
-    padding: 10px;
-    font-size: 1.3em;
-    font-weight: bold;
-    color: var(--dark);
-    list-style: none;
-    cursor: pointer;
+    position: fixed;
+    top: 0;
+    background-color: var(--color-dark-primary);
+    opacity: 0.9;
 }
 
-.index-item:hover {
-    background: var(--dark);
-    color: var(--color-primary);
+.cv h1 {
+    font-weight: 900;
 }
 
-/* ******************** Blog ******************** */
-
-.box {
-    width: 33%;
-    height: 350px; 
-    margin: 30px;
-    border: thin solid var(--dark);
+.cv h2 {
+    font-size: 2.3em;
 }
 
-.box-img {
-    width: 100%;
-    height: 50%;
-}
-
-.box-text {
-    padding: 5px 20px;
-}
-
-/* ******************** Buttons ******************** */
-
-.btn {
-    display: inline-block;
-    width: 200px;
-    padding: 1rem;
-    font-weight: bold;
-    text-align: center;
-    color: var(--color-dark);
-    background-color: var(--color-primary);
-    border-radius: 0.5rem;
+.cv p,
+.cv ul li {
+    font-size: 2em;
 }
 
 /* ******************** Footer ******************** */
